@@ -17,11 +17,17 @@ def sum_of_squares(n):
 
     if len(list_of_couples_squares):
         for pair_of_squares in list_of_couples_squares:
-            print (f'{n} = {pair_of_squares[0]} + {pair_of_squares[1]}')
+            # In Pycharm it works fine, but www.umimeprogramovat.cz does not support it! Why?
+            #print (f'{n} = {pair_of_squares[0]} + {pair_of_squares[1]}')
+
+            #This is older way and isnot recommended. But www.umimeprogramovat.cz accepted it
+            print(n,'=', pair_of_squares[0], '+', pair_of_squares[1])
+
     else:
-        print(f'{n}: Nejde to.')
+        print('Nejde to.')
 
 
 if __name__ == '__main__':
-    for a in range(0,1001):
-        sum_of_squares(a)
+    sum_of_squares(13)
+    print("---")
+    sum_of_squares(14)
